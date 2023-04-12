@@ -13,8 +13,8 @@ data = load_model()
 classificator = data['model']
 
 def show_predict_page():
-    st.title("IA para Predição de Inadimplência")
-    
+    st.title("Crédito Personalizado Open Finance")
+    st.write("""Solução inteligente atender o seu cliente com taxas de juros personalizadas utilizando dados do Open Finance.""")
     st.write("""Nos precisaremos apenas de algumas informações:""")
 
     limit_bal = st.slider("Limite de Crédito" , 1000, 100000, 5000)
