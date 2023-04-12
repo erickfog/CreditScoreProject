@@ -1,2 +1,2 @@
 # CreditScoreProject
-This project was created for...
+In this project I will create a credit score model using logistic regression.
