@@ -13,9 +13,9 @@ df = load_data()
 
 def show_explore_page():
     
-    st.title('Explore sobre seus cliente')
+    st.title('Explore os Dados dos Clientes')
 
-    st.write("""Confira o número de inadimplentes por idade.""")
+    #st.write("""Confira o número de inadimplentes por idade.""")
 
     #df_aux = df[df['default']==1]
     #aux = df_aux[['AGE','default']].groupby('AGE').sum().reset_index()
