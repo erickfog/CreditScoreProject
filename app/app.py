@@ -9,7 +9,6 @@ with st.sidebar:
     page = option_menu("Menu", ["Predição","Insights Open Finance"], 
         icons=[ 'robot' , 'house'], menu_icon="cast", default_index=1)
 
-#page = st.sidebar.selectbox("Exploração ou Predição" , ("Predição" , "Exploração") )
 
 if page=='Predição':
     show_predict_page()

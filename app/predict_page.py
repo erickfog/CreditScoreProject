@@ -14,7 +14,7 @@ classificator = data['model']
 
 def show_predict_page():
     st.title("Crédito Personalizado Open Finance")
-    st.write("""Inteligência Artificial Aplicada a Personalização de créditovia Open Finance.""")
+    st.write("""Inteligência Artificial Aplicada a Personalização de crédito via Open Finance.""")
     st.write("""Informe os seguintes Dados""")
 
     limit_bal = st.slider("Limite de Crédito" , 1000, 100000, 5000)
