@@ -13,17 +13,16 @@ data = load_model()
 classificator = data['model']
 
 def show_predict_page():
-    st.title("Crédito Personalizado Open Finance")
+    st.title("Previsão de Inadimplência no Cartão de Crédito")
     st.write("""Inteligência Artificial Aplicada a Personalização de crédito via Open Finance.""")
-    st.write("""Informe os seguintes Dados""")
 
     limit_bal = st.slider("Limite de Crédito" , 1000, 100000, 5000)
 
-    age = st.number_input('Idade:')
+    age = st.number_input('Idade:', 20)
 
     pay_amt6 = st.number_input('Valor pago na última fatura: ')
 
-    ok = st.button('Veja se será inadinplente')
+    ok = st.button('Previsão')
     if ok:
         X = np.array([[limit_bal,age,pay_amt6]])
 
