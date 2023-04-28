@@ -1,4 +1,4 @@
-#(https://github.com/erickfog/CreditScoreProject/blob/main/img/creditcard.jpeg)
+# ![](https://github.com/erickfog/CreditScoreProject/blob/main/img/creditcard.jpeg)
 # Previsão de Inadimplência no Cartão de Crédito
 
 ## Problema de Negócio
