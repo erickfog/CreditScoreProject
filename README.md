@@ -24,28 +24,47 @@ Para implementar a solução, seguiremos as seguintes etapas:
 5. Avaliação de desempenho dos modelos usando métricas como AUC-ROC, acurácia, F1-score e AUPRC.
 6. Otimização do modelo selecionado e ajuste de hiperparâmetros.
 
-## Modelos de Machine Learning Aplicados
-Foram treinados três modelos de machine learning:
+## Algortimos de Machine Learning Aplicados
+Foram treinados os seguintes algortimos de machine learning:
 1. Regressão Logística
 2. Árvore de Decisão
 3. Random Forest
 4. XGBoost Classifier
+5. 
+6.
+7.
+8.
+
+Os modelos foram treinados de três formas diferentes: 
+1. Utilizando o dataset desbalanceado. 
+2. Utilizando o dataset balanceado com oversampling usando SMOTE. 
+3. Utilizando o dataset balanceado com oversampling usando ADASYN. 
+
+As performances do modelos serão apresentadas para as três diferentes formas que os modelos foram treinados.
 
 ## Machine Learning Model Performance
 Os modelos foram avaliados utilizando as seguintes métricas:
-- AUPRC (Area Under Precision-Recall Curve)
-- AUC-ROC
-- Acurácia
-- F1-score
+- Average Precision Recall(AP)
+- Precision Recall Curve
 
 Os resultados foram os seguintes:
 
-| Métrica           | Regressão Logística | Árvore de Decisão | Random Forest |
-|-------------------|---------------------|-------------------|---------------|
-| AUPRC		    | 0.83		  | 0.92	      | 0.93	      |	
-| AUC-ROC           | 0.75                | 0.70              | 0.80          |
-| Acurácia          | 0.70                | 0.65              | 0.75          |
-| F1-score          | 0.50                | 0.45              | 0.55          |
+
+| Modelo              | Métrica (Average Precision Recall)|
+|---------------------|-----------------------------------|
+| Logistic Regression |	0.480149                          |
+| KNN	              | 0.315004                          |
+| Decision Tree	      | 0.300951                          |
+| Random Forest	      | 0.530445			  |	
+| Gradient Boosting   |	0.554870			  |
+| AdaBoostClassifier  |	0.539499			  |
+| GaussianNB	      | 0.482155                          |
+| LDA	              | 0.503573                          |
+| QDA		      |	0.442525                          |
+| Extra Trees	      |	0.511844                          |
+| XGBoosting	      |	0.527110                          |
+
+
 
 ## Convertendo o Desempenho do Modelo em Resultados de Negócio
 Com base nos resultados, escolhemos o modelo de Random Forest como o melhor modelo. Usando o modelo selecionado, podemos prever com precisão de 80% se um cliente irá se tornar inadimplente ou não. Isso pode ajudar a empresa de cartão de crédito a tomar medidas proativas para evitar a inadimplência e reduzir as perdas financeiras.
