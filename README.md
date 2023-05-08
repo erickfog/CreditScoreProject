@@ -42,7 +42,7 @@ Os modelos foram treinados de três formas diferentes:
 
 As performances do modelos serão apresentadas para as três diferentes formas que os modelos foram treinados.
 
-## Machine Learning Model Performance
+## Machine Learning Model Performance (Unbalanced Dataset)
 Os modelos foram avaliados utilizando as seguintes métricas:
 - Average Precision Recall(AP)
 - Precision Recall Curve
@@ -55,20 +55,47 @@ Os resultados foram os seguintes:
 | Logistic Regression |	0.480149                          |
 | KNN	              | 0.315004                          |
 | Decision Tree	      | 0.300951                          |
-| Random Forest	      | 0.530445			  |	
+| Random Forest	      | 0.530445			  |     
 | Gradient Boosting   |	0.554870			  |
 | AdaBoostClassifier  |	0.539499			  |
 | GaussianNB	      | 0.482155                          |
-| LDA	              | 0.503573                          |
-| QDA		      |	0.442525                          |
 | Extra Trees	      |	0.511844                          |
 | XGBoosting	      |	0.527110                          |
 
+## Machine Learning Model Performance (Balanced Dataset - SMOTE)
+
+| Modelo              | Métrica (Average Precision Recall)|
+|---------------------|-----------------------------------|
+| Logistic Regression |	                          |
+| KNN	              |                           |
+| Decision Tree	      |                           |
+| Random Forest	      | 			  |     
+| Gradient Boosting   |				  |
+| AdaBoostClassifier  |				  |
+| GaussianNB	      |                           |
+| Extra Trees	      |	                          |
+| XGBoosting	      |	                          |
+
+
+## Machine Learning Model Performance (Balanced Dataset - ADASYN)
+
+
+| Modelo              | Métrica (Average Precision Recall)|
+|---------------------|-----------------------------------|
+| Logistic Regression |	                          |
+| KNN	              |                           |
+| Decision Tree	      |                           |
+| Random Forest	      | 			  |     
+| Gradient Boosting   |				  |
+| AdaBoostClassifier  |				  |
+| GaussianNB	      |                           |
+| Extra Trees	      |	                          |
+| XGBoosting	      |	                          |
 
 
 ## Convertendo o Desempenho do Modelo em Resultados de Negócio
 Com base nos resultados, escolhemos o modelo de Random Forest como o melhor modelo. Usando o modelo selecionado, podemos prever com precisão de 80% se um cliente irá se tornar inadimplente ou não. Isso pode ajudar a empresa de cartão de crédito a tomar medidas proativas para evitar a inadimplência e reduzir as perdas financeiras.
 
 ## Conclusão
-Neste projeto, desenvolvemos um modelo de machine learning para prever a inadimplência no cartão de crédito. Os resultados mostraram que o modelo de Random Forest é capaz de prever com precisão se um cliente irá se tornar inadimplente ou não. Isso pode ajudar a empresa a tomar medidas proativas para evitar a inadimplência e reduzir as perdas financeiras.
+Neste projeto, desenvolvemos um modelo de machine learning para prever a inadimplência no cartão de crédito. Os resultados mostraram que o modelo de Random Forest treinado com os dados balanceados através de oversampling utilizando o SMOTE é capaz de prever com precisão se um cliente irá se tornar inadimplente ou não. Isso deve  ajudar a empresa a tomar medidas proativas para evitar a inadimplência, reduzir as perdas financeiras e ainda construir um score de crédito para cada cliente.
 
