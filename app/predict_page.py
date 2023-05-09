@@ -50,7 +50,7 @@ def show_predict_page():
         else:
             st.subheader("O seu cliente não será indadimplente.")
 
-        proba = classificator.predict_proba(X)[:,1][0]
+        proba = classificator.predict_proba(X)[:,0][0]
         score=0
         score = int(proba*1000)
         st.metric(label='Score',value=score)
