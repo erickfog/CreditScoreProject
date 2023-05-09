@@ -18,6 +18,8 @@ MarkupSafe==2.1.1
 numpy
 packaging==21.3
 pandas
+pickleshare==0.7.5
+cloudpickle==2.2.1
 Pillow==9.3.0
 protobuf==3.20.3
 pyarrow==10.0.0
