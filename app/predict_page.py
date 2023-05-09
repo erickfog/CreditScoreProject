@@ -1,7 +1,6 @@
 import streamlit as st
 import pickle
 import numpy as np
-import uuid
 
 def load_model():
     with open('../model/creditscore.pkl' , 'rb') as file:
