@@ -28,12 +28,13 @@ Para implementar a solução, seguiremos as seguintes etapas:
 Foram treinados os seguintes algortimos de machine learning:
 1. Regressão Logística
 2. Árvore de Decisão
-3. Random Forest
+3. Floresta Aleatória
 4. XGBoost Classifier
-5. 
-6.
-7.
-8.
+5. Extra Trees Classifier
+6. AdaBoost
+7. KNN Classifier
+8. Gradient Boosting
+9. GaussianNB
 
 Os modelos foram treinados de três formas diferentes: 
 1. Utilizando o dataset desbalanceado. 
@@ -66,15 +67,15 @@ Os resultados foram os seguintes:
 
 | Modelo              | Métrica (Average Precision Recall)|
 |---------------------|-----------------------------------|
-| Logistic Regression |	                          |
-| KNN	              |                           |
-| Decision Tree	      |                           |
-| Random Forest	      | 			  |     
-| Gradient Boosting   |				  |
-| AdaBoostClassifier  |				  |
-| GaussianNB	      |                           |
-| Extra Trees	      |	                          |
-| XGBoosting	      |	                          |
+| Logistic Regression |	0.722913                  |
+| KNN	              | 0.744800                  |
+| Decision Tree	      | 0.699038                  |
+| Random Forest	      | 0.919042            	  |     
+| Gradient Boosting   |	0.848321		  |
+| AdaBoostClassifier  |	0.811769		  |
+| GaussianNB	      | 0.703378                  |
+| Extra Trees	      |	0.927824                  |
+| XGBoosting	      |	0.896304                  |
 
 
 ## Machine Learning Model Performance (Balanced Dataset - ADASYN)
@@ -82,20 +83,20 @@ Os resultados foram os seguintes:
 
 | Modelo              | Métrica (Average Precision Recall)|
 |---------------------|-----------------------------------|
-| Logistic Regression |	                          |
-| KNN	              |                           |
-| Decision Tree	      |                           |
-| Random Forest	      | 			  |     
-| Gradient Boosting   |				  |
-| AdaBoostClassifier  |				  |
-| GaussianNB	      |                           |
-| Extra Trees	      |	                          |
-| XGBoosting	      |	                          |
+| Logistic Regression |	0.703459                  |
+| KNN	              | 0.732704                  |
+| Decision Tree	      | 0.691625                  |
+| Random Forest	      | 0.913831            	  |     
+| Gradient Boosting   |	0.838238		  |
+| AdaBoostClassifier  |	0.798553		  |
+| GaussianNB	      | 0.683018                  |
+| Extra Trees	      | 0.923480                  |
+| XGBoosting	      |	0.891426                  |
 
 
 ## Convertendo o Desempenho do Modelo em Resultados de Negócio
-Com base nos resultados, escolhemos o modelo de Random Forest como o melhor modelo. Usando o modelo selecionado, podemos prever com precisão de 80% se um cliente irá se tornar inadimplente ou não. Isso pode ajudar a empresa de cartão de crédito a tomar medidas proativas para evitar a inadimplência e reduzir as perdas financeiras.
+Com base nos resultados, escolhemos o modelo de Random Forest como o melhor modelo. Usando o modelo selecionado, podemos prever com precisão de 90% se um cliente irá se tornar inadimplente ou não. Isso pode ajudar a empresa de cartão de crédito a tomar medidas proativas para evitar a inadimplência e reduzir as perdas financeiras, além de auxiliar no direcionamento das políticas de crédito.
 
 ## Conclusão
-Neste projeto, desenvolvemos um modelo de machine learning para prever a inadimplência no cartão de crédito. Os resultados mostraram que o modelo de Random Forest treinado com os dados balanceados através de oversampling utilizando o SMOTE é capaz de prever com precisão se um cliente irá se tornar inadimplente ou não. Isso deve  ajudar a empresa a tomar medidas proativas para evitar a inadimplência, reduzir as perdas financeiras e ainda construir um score de crédito para cada cliente.
+Neste projeto, desenvolvemos um modelo de machine learning para prever a inadimplência no cartão de crédito. Os resultados mostraram que o modelo de Random Forest treinado com os dados balanceados através de oversampling utilizando o SMOTE é capaz de prever com precisão se um cliente irá se tornar inadimplente ou não. Isso deve  ajudar a empresa a fazer o direcionamento de suas políticas de crédito e reduzir as perdas financeiras e ainda construir um score de crédito para cada cliente.
 
